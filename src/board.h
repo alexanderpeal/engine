@@ -7,5 +7,6 @@ extern char board[8][8];
 
 void init_board();
 void print_board();
+void make_move();
 
 #endif

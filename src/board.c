@@ -1,4 +1,8 @@
+#include <stdlib.h>
 #include <stdio.h>
+
+// Most moves will be of length 4, but some can be of length 5
+#define MOVE_BUFFER_SIZE 5
 
 char board[8][8];
 
@@ -28,4 +32,15 @@ void print_board() {
         }
         printf("\n");
     }
+}
+
+void make_move(char* move) {
+    // int length = 0;
+    // char *buffer = (char *)malloc(MOVE_BUFFER_SIZE * sizeof(char));
+    // if (buffer == NULL) {
+    //     perror("Memory allocation failed");
+    //     exit(EXIT_FAILURE);
+    // }
+
+    printf("Making move: %s", move);
 }
